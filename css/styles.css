@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+
+body{
+ font-family: 'Montserrat', sans-serif;
+}
+
+h5, h3 {
+  font-weight: 600;
+}
+
+/* Navbar */
+.nav-link {
+  color: #41819e;
+  font-weight: 600;
+}
+.nav-link:hover {
+  color: #41819e;
+  font-weight: 600;
+}
+
+.icon-btn {
+  margin-right: 6px;
+}
+.navbar-toggler{
+  background-color: #0396db;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #fb9f00;
+    border-color: #fb9f00;
+    border: none;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary{
+  background-color: #ffae23;
+}
+
+/* Carousel base class */
+.carousel {
+  margin-bottom: 2rem;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  /*height: 32rem;*/
+
+}
+.carousel-item > img {
+  /*position: absolute;*/
+  /*top: 0;
+  left: 0;*/
+  max-width: 100%;
+  height: auto;
+  /*background-size: cover;
+  background-position: center;*/
+}
+
+/*.carousel-item, .img-fluid {
+  width:100%;
+}*/
+
+/*.carousel-item a {
+  display: block;
+  width:100%;
+}*/
+
+.carousel-indicators button {
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 100%;
+  margin-right: 14px !important;
+  border: 3px solid white !important;
+  background-color: #fff0 !important;
+  opacity: 1 !important;
+}
+
+.carousel-indicators .active {
+  background-color: white !important;
+}
+
+/*.carousel-indicators {
+  padding-bottom: 3rem;
+}*/
+
+
+.page-section {
+    padding: 3rem 0;
+}
+
+.heading-purple {
+  color: #5d21db;
+  font-size: 1.4rem;
+}
+
+.heading-blue {
+  color: #00adfe;
+  font-size: 1.4rem;
+}
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-clip: border-box;
+  border-radius: 0.5rem;
+  color: #fff;
+  padding: 10px;
+  box-shadow: 0 2.2rem 2rem -2rem hsl(0deg 0% 0% / 60%);
+
+}
+
+.card-blue {
+  background: rgb(71,188,255);
+  background: linear-gradient(180deg, rgba(71,188,255,1) -50%, rgba(21,136,229,1) 100%);
+}
+
+.card-purple {
+  background: rgb(142,88,254);
+  background: linear-gradient(180deg, rgba(142,88,254,1) -50%, rgba(84,24,207,1) 100%);
+}
+
+.btn-rounded {
+    padding: 0.6rem 2.25rem;
+    font-size: 0.85rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 10rem;
+}
+
+.bg-light {
+  background-color: #f3f4f6 !important;
+}
+
+.text-blue {
+  color: #41819e;
+}
+.text-blue span {
+  background-color: #e0ebef;
+  font-weight: 600;
+}
+
+@keyframes float {
+  0% {
+    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+    transform: translatey(0px);
+  }
+  50% {
+    box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+    transform: translatey(-20px);
+  }
+  100% {
+    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+    transform: translatey(0px);
+  }
+}
+
+/*.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}*/
+.baby-red{
+  position: absolute;
+  right: 1rem;
+  padding-right: 8rem;
+  padding-top: 40px;
+}
+
+.molecule_gray{
+  position: relative;
+  bottom: 66px;
+}
+
+.molecule-small {
+  position: relative;
+  left: 164px;
+  top: 150px;
+}
+
+.molecule-green {
+  position: absolute;
+  right: 4rem;
+}
+.avatar{
+  width: 150px;
+
+  /*height: 150px;*/
+  /*box-sizing: border-box;*/
+  /*border: 5px white solid;*/
+  /*border-radius: 50%;*/
+  overflow: hidden;
+  /*box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);*/
+  transform: translatey(0px);
+  animation: float 6s ease-in-out infinite;
+  /*background-color:rgba(0, 0, 0, 0.0);*/
+  background:  none;
+
+}
+/*.avatar img {
+  width: 100%; height: auto;
+}*/
+
+@media(max-width: 1200px) {
+  .nav-item {
+    font-size: smaller;
+  }
+}
+
+@media(max-width: 1024px) {
+  .baby-red {
+    visibility: hidden;
+  }
+  .molecule_gray {
+    visibility: hidden;
+  }
+  .molecule_green {
+    visibility: hidden;
+  }
+  .molecule-small {
+    visibility: hidden;
+  }
+
+}
+
+@media(max-width: 768px) {
+  .card-purple {
+    margin-bottom: 20px;
+  }
+  .baby-red {
+    visibility: hidden;
+  }
+  .molecule_gray {
+    visibility: hidden;
+  }
+  .molecule-small {
+    visibility: hidden;
+  }
+}
+
+@media(max-width: 414px) {
+  .baby-red {
+    visibility: hidden;
+  }
+  .molecule_gray {
+    visibility: hidden;
+  }
+  .molecule-small {
+    visibility: hidden;
+  }
+}
